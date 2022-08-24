@@ -1,0 +1,131 @@
+@mixin banner-css ($font-size) {
+    font-family: $primary-font;
+     font-size: $font-size;
+    font-weight: 600;
+    background: $primary-color;
+    width: fit-content;
+    padding: 3px 16px 0px 16px;
+    box-sizing: border-box;
+    line-height: 48px;
+    text-transform: uppercase;
+}
+.main-banner{
+    background-image: url(../images/06cec19dc039f7df7da1c954af81a42b.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 500px;
+    align-items: end;
+    display: flex;
+
+ .main-banner-content h1{
+    @include banner-css(3rem);
+   }
+   .main-banner-content h2{
+    @include banner-css(2.5rem);
+   }
+    .main-banner-content a{
+    background: $white-color;
+    padding: 10px 15px;
+    font-size: 18px;
+   }
+   .down-arrow{
+       margin-bottom: -12px;
+   }
+    .down-arrow span{
+    background: $primary-color;
+    padding: 10px 20px;
+    color: $white-color;
+    font-size: 25px;
+    margin-bottom: -30px;
+   }
+}
+.manage-content h4{
+    font-family: $primary-font;
+    font-size: 43px;
+    font-weight: 700;
+    color: $text-color;
+    text-transform: uppercase;
+}
+.manage-content h1{
+    font-family: "Lato";
+    background-image: url(../images/06cec19dc039f7df7da1c954af81a42b.png);
+    background-repeat: repeat;
+    background-size: cover;
+    background-position: 100% 78%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 120px;
+    text-align: left;
+    font-weight: 900;
+    text-transform: uppercase;
+    line-height: 109px;
+}
+.left-heading{
+    margin-left: 120px;
+}
+.left-heading-second{
+    margin-left: 200px;
+}
+.v-image{
+    margin-left: -36px;
+}
+.feautres .icon-item{
+    flex-basis: 125px;
+}
+.feautres .icon-item h4{
+    font-size: 16px;
+    font-family: 'Lato';
+    text-transform: uppercase;
+    font-weight: 700;
+    line-height: 22px;
+    color: $text-color;
+}
+.feautres .icon-item img{
+    width: 65px;
+}
+.about-banner{
+    background-color: #3F3531;
+    overflow: hidden;
+    padding-bottom: 70px;
+    .container{
+        margin-top: -519px;
+    }
+}
+.about-banner .grey-bg{
+    background-image: url(../images/grey-bg.png);
+    background-size: cover;
+    height: 600px;
+}
+.about-banner .grey-bg-video{
+    position: relative;
+    background-image: url(../images/f7e7cfbc4595ba3fed34d7ba6a0431ef.png);
+    background-size: cover;
+    height: 400px;
+}
+.about-banner .video-icon{
+    text-align: center;
+    padding: 146px;
+}
+.about-banner .video-icon i{
+    color: $white-color;
+    background: #44AF72;
+    border-radius: 39px;
+    font-size: 23px;
+    height: 70px;
+    width: 70px;
+    padding: 24px 27px;
+}
+.about-banner .video-icon span{
+    height: 70px;
+    width: 70px;
+    border: 3px solid #44AF72;
+    padding: 29px 5px 26px 5px;
+    border-radius: 68px;
+}
+.about-banner .about-content a{
+    background:#44AF72;
+    padding: 15px 20px;
+    font-size: 18px;
+    color: $white-color;
+    font-family: $primary-font;
+}

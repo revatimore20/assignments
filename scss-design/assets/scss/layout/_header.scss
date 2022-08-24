@@ -1,0 +1,122 @@
+@mixin headerdisc ($par1) {
+    height: 15px;
+    width: 15px;
+    background-color: $par1;
+    border-radius: 10px;
+    margin: 0px 3px;
+}
+header {
+    background-color: $white-color;
+    padding: 7px 0px;
+
+.navbar-logo-box p{
+    font-family: $primary-font;
+    font-weight: 600;
+    color: #111;
+    font-size: 14px;
+    padding: 5px 9px;
+    line-height: 21px;
+    text-transform: uppercase;
+}
+.navbar-brand{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.navbar-expand-lg .navbar-collapse{
+    justify-content: flex-end;
+}
+.navbar-top-first{
+    justify-content: space-between;
+}
+.navbar-expand-lg .navbar-nav{
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+.navbar-top-first .nav-item{
+    padding: 0px 10px;
+}
+.font-size-div{
+    display: flex;
+    align-items: center;
+    padding: 0px 0px;
+    box-sizing: border-box;
+   
+}
+.font-size-div .small-size{
+    font-weight: 700;
+    color: #505050;
+    font-size: 12px;
+    padding: 0px 8px;
+}
+.font-size-div .letter-case{
+    font-weight: 700;
+    color: #505050;
+    font-size: 15px;
+    padding: 0px 8px;
+}
+.font-size-div .big-size{
+    font-weight: 700;
+    color: #505050;
+    font-size: 18px;
+    padding: 0px 8px;
+}
+.dropdown{
+        display: flex;
+    align-items: center;
+    padding: 5px 4px;
+    box-sizing: border-box;
+   }
+.dropdown select{
+    border: 0px;
+    font-family: 'Lato';
+    font-size: 14px;
+}
+.colored-dots{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 0px;
+}
+.colored-dots span.blue{
+   @include headerdisc(#265781);
+}
+.colored-dots span.green{
+    @include headerdisc(#52B27B);
+ }
+ .colored-dots span.yellow{
+    @include headerdisc(#F2E162);
+ }
+ .fa-search{
+    color: #265781;
+    font-size: 16px;
+    padding: 6px 0px;
+ }
+ .navbar-top-second .navbar-nav .nav-link{
+       padding: 0px 10px;
+    color: $text-color;
+    font-family: $primary-font;
+}
+.navbar-top-first .navbar-nav .nav-link{
+    
+    padding: 0px 10px;
+    color: $text-color;
+    font-family: $primary-font;
+}
+.navbar-top-first .nav-item:nth-child(4),
+.navbar-top-first .nav-item:nth-child(5),
+.navbar-top-first .nav-item:nth-child(6){
+    border-right: 1px solid #707070;
+}
+.navbar-expand-lg .navbar-nav .nav-link{
+        color: $text-color;
+    font-family: $primary-font; 
+}
+.navbar-top-second .navbar-nav .nav-item:last-child {
+    border-right: 0px solid #707070; 
+}
+.navbar-top-second .navbar-nav .nav-item {
+    border-right: 1px solid #707070; 
+}
+}

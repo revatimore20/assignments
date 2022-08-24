@@ -1,0 +1,112 @@
+@media  screen and (max-width:768px) {
+    header .navbar-logo-box p{
+     color: #111;
+    font-size: 11px;
+    padding: 5px 5px;
+    line-height: 15px;
+    } 
+    .main-banner .main-banner-content h1{
+        font-size: 2rem;
+        line-height: 36px;
+    }
+    .main-banner .main-banner-content h2 {
+        font-size: 1.4rem;
+        width: -webkit-fit-content;
+        width: -moz-fit-content;
+        width: fit-content;
+        line-height: 33px;
+        
+    }
+    .main-banner .main-banner-content a {
+        background: #fff;
+        padding: 8px 12px;
+        font-size: 13px;
+    }
+    .manage-content{
+        text-align: center;
+    }
+    .manage-content h4 {
+        font-size: 21px;
+        margin: 0px;
+        line-height: 33px;
+  }
+  .manage-content h1{
+      font-size: 3.2rem;
+      line-height: 40px;
+      text-align: center;
+  }
+  .v-image {
+    margin-left: 0px;
+    margin-top: 20px;
+    text-align: center;
+}
+.v-image img{
+    width: 120px;
+}
+.feautres{
+flex-wrap: wrap;
+}
+.feautres .icon-item {
+    flex-basis: 125px;
+    margin-top: 10px;
+}
+.about-content{
+    margin-top: 126px;
+    padding: 10px;
+}
+.about-banner{
+    padding-bottom: 109px;
+}
+.footer-section{
+    background-color: #1b7642;
+    padding-top: 38px;
+    .row{
+        flex-direction: column-reverse;
+    }
+    .footer-right-contact{
+        padding: 20px 20px;
+    }
+    .content h4, .social-icons h4 {
+        font-size: 16px;
+        color: #fff;
+    }
+    .content p{
+            font-size: 14px;
+    }
+    .btn-theme{
+        font-size: 14px;
+    margin-top: 10px;
+    }
+    .input-group-btn {
+        margin-left: 0px;
+        width: 100%;
+    }
+    .subscribe-form {
+        padding: 20px;
+    }
+    .subscribe-form form{
+        flex-wrap: wrap;
+    }
+    .nav-list{
+        flex-wrap: wrap;
+        padding: 0 20px;
+    }
+    .nav-list .one-list-col{
+        flex-basis: 100%;
+    }
+    .copyright{
+        flex-wrap: wrap;
+        padding: 0 20px;
+    }
+    .text-right{
+        text-align: left !important;
+    }
+}
+header .navbar-expand-lg .navbar-nav{
+    flex-direction: column;
+}
+.navbar-toggler{
+    display: flex;
+    width: 16% !important;
+}
+}

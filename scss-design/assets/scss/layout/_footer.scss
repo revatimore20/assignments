@@ -1,0 +1,99 @@
+.footer-section{
+    background-image: url(../images/footer-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 120px;
+}
+.subscribe-form input{
+    padding: 10px 20px;
+    background: #11111140;
+    border-radius: 31px;
+    color: #fff;
+    border: 0px;
+}
+input.form-control::placeholder {
+    color: #fff;
+}
+  .btn-theme{
+    width: 100%;
+    background: #fff;
+    border-radius: 30px;
+    padding: 10px 15px;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+  .input-group-btn{
+    margin-left: -98px;
+    width: 29%;
+  }
+  .one-list-col h5{
+    color: #fff;
+    font-family: $primary-font;
+    font-weight: 600;
+    font-size: 20px;
+  }
+  .one-list-col ul{
+    list-style-type: none;
+    padding: 0px;
+    color: #fff;
+    font-size: 16px;
+    font-family: 'Lato';
+    line-height: 30px;
+    padding-top: 10px;
+  }
+  .text p, .text-right p{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 29px;
+  }
+  .footer-right-contact .contact-us .content{
+    flex-basis: 260px;
+    color:#fff;
+    padding-left: 24px;
+
+  }
+  .footer-right-contact{
+    padding: 20px 26px;
+    margin: 0px 8px;
+    background: #08080826;
+  }
+  .footer-right-contact .contact-us{
+    border-bottom: 1px solid #ffffff3d;
+  }
+  .footer-right-contact .contact-us:nth-child(3){
+    border-bottom: 0px solid #ffffff3d;
+  }
+  .content h4, .social-icons h4{
+    font-size: 20px;
+    color: #fff;
+  }
+  button:focus:not(:focus-visible) {
+    outline: 0;
+    background: #fff;
+    border: 0px;
+    width: -webkit-fill-available;
+}
+.form-control:focus {
+  color: #212529;
+  background-color: rgba(17, 17, 17, 0.2509803922);
+  outline: 0;
+  box-shadow: none;
+  border-color: transparent;
+}
+.social-icons-list ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 5px;
+  border-left: 1px solid #ffffff5c;
+  margin-left: 20px;
+}
+.social-icons-list ul li{
+  color: #ffff;
+    padding: 0px 10px;
+}
+.subscribe-form .btn:hover{
+  background: #fff;
+    border: 0px;
+    padding: 10px 15px;
+}
