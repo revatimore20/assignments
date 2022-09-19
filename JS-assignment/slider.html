@@ -13,15 +13,36 @@
             display: block;
          
         }
+        .main-box{
+            margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: max-content;
+    position:relative;
+        }
+        .btns-prev{
+            position: absolute;
+            top: 50%;
+        }
+        .btns-next{
+            position: absolute;
+    top: 50%;
+    right: -7%;
+        }
+        img{
+            height: 355px;
+        }
     </style>
 </head>
 <body>
-  <div>
-    <button id="prev">-</button>
+  <div class="main-box">
+    <div class="btns-prev">
+        <button id="prev"> < </button>
+    </div>
+    <div class="btns-next">
+        <button id="next">></button>
+  </div>
    
-      
-   
-    <button id="next">+</button>
     <ul>
         <li data-slide="1" >
            <img src="1.jpg">
@@ -79,6 +100,17 @@ function validateFunction(currentValue)
   }
 
   validateFunction(currentValue);
+
+// const autoSlide = setInterval(function(){
+//     console.log('change');
+//     validateFunction(currentValue)
+//     currentValue++;
+//     if(currentValue==6){
+//         currentValue=1
+//         // clearInterval(autoSlide);
+//     }
+// }, 5000);
+
 
 prev.addEventListener('click',function(){
 

@@ -5,33 +5,86 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+  <style>
+   h4{
+      text-align: center;
+   }
+   input{
+      padding: 7px 10px;
+      border: 1px solid #333;
+      border-radius: 5px;
+      width: 200px;
+      display: inline-block;
+      margin-left: 10px;
+   }
+   button{
+    padding: 10px 20px;
+    font-family: 'Montserrat';
+    font-weight: 400;
+    border-radius: 30px;
+    background-color: #564FF2;
+    border: 0;
+    color: #fff;
+   
+}
+.main-div{
+   text-align: center;
+}
+.main-div div{
+padding: 10px ;
+}
+label{
+   width: 100px;
+}
+.text-center{
+   text-align: center;
+}
+  </style>  
 </head>
 <body>
-    <h4>Form Examples</h4>
+   <!--- <h4>Form Examples</h4>
  <form class="simpleform">
     <label>First Name</label>
     <input type="text" id="fname" name="fname">
     <label>Last Name</label>
     <input type="text" id="lname" name="fname">
     <button id="submit" >Submit</button>
- </form>   
+ </form>   -->
 
 <br><br>
+<h4>Calculate the Total Marks Obtained</h4>
  <form>
-    <label>Maths</label>
-    <input type="number" id="maths" name="maths"><br><br>
-    <label>English</label>
-    <input type="number" id="english" name="english"><br><br>
-    <label>History</label>
-    <input type="number" id="history" name="history"><br><br>
-    <label>Geometry</label>
-    <input type="number" id="geometry" name="geometry"><br><br>
-    <label>Geography</label>
-    <input type="number" id="geography" name="geography"><br><br>
-    <button id="total">Total</button>
-    <p>Total marks obtained :<span id="marksobtained"></span></p>
-    <p>percentage:<span id="percent"></span></p>
-    <h4 id="grade"></h4>
+   <div class="main-div">
+      <div>
+         <label>Maths</label>
+         <input type="number" id="maths" name="maths">
+      </div>
+       <div>
+         <label>English</label>
+         <input type="number" id="english" name="english">
+       </div>
+       <div>
+         <label>History</label>
+         <input type="number" id="history" name="history">
+       </div>
+   <div>
+      <label>Geometry</label>
+      <input type="number" id="geometry" name="geometry">
+   </div>
+      <div>
+         <label>Geography</label>
+         <input type="number" id="geography" name="geography">
+      </div>
+      <button id="total">Total</button>
+   </div>
+   
+    <br><br>
+    <div class="text-center">
+      <p>Total marks obtained :<span id="marksobtained"></span></p>
+      <p>percentage:<span id="percent"></span></p>
+      <h4 id="grade"></h4>
+    </div>
+   
  </form>
  <script>
     
@@ -89,9 +142,6 @@ function marksTotal(){
         break;
         case (percentage >= 85):
            graderesult = "A";
-            
-      
-        
         
     }
    grade.innerText = "Your Grade is "+ graderesult; 
